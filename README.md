@@ -1,1 +1,1 @@
-Zadania z przedmiotu Podstawy programowania, organizowanego w ramach studiów (I semestr) na UP w Krakowie.
+Podstawy programowania 1, UP w Krakowie.
