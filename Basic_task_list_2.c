@@ -242,7 +242,6 @@ int main()
 		return 0;
 	}
 	
-	
 	return 0;
 }
 ----------------------------------------------------------------------------------------------
@@ -277,7 +276,6 @@ int main()
     d = a >= b ? (a >= c ? a : c) : (b >= c ? b : c);
     
 	printf("The biggest number is %f.\n", d);
-	
 	
 	return 0;
 }
@@ -314,6 +312,7 @@ int main()
 	(a < 0 && b < 0) ? 
         printf("The sum of two negative numbers = %f \n", sum) : (a > 0 && b > 0) ? 
         printf("The sum of two positive numbers = %f \n", sum) : printf("Enter two numbers with the same characters. \n");
+	
 	return 0;
 }
 ----------------------------------------------------------------------------------------------
@@ -396,3 +395,182 @@ int main()
 ----------------------------------------------------------------------------------------------
 
 //Task 10a
+
+#include<stdio.h>
+
+int main()
+{
+	float a, b, result;
+	char op, m;
+	printf("Enter a simple expression: number operator number.\n");
+	scanf("%f" " %c" "%f", &a, &op, &b);
+	
+	if (op == '+')
+	{
+		result = a + b;
+		printf("The operator entered is +. The result of the addition is %.2f \n", result);
+		return 0;
+	}
+	else if (op == '-')
+	{
+		result = a - b;
+		printf("The operator entered is -. The result of the subtraction is %.2f \n", result);
+		return 0;
+	}
+	else if (op == '*')
+	{
+		result = a * b;
+		printf("The operator entered is *. The result of the multiplication is %.2f \n", result);
+		return 0;
+	}
+	else if (op == '/')
+	{
+		result = a / b;
+		printf("The operator entered is /. The result of the division is %.2f \n", result);
+		return 0;
+	}
+	else
+	{
+	printf("Enter the basic operator: +, -, * or /. \n");
+	return 1;
+	}
+	
+	return 0;
+}
+----------------------------------------------------------------------------------------------
+
+//Task 10b
+	
+#include<stdio.h>
+ 
+int main()
+{
+    float a, b, result;
+    char c, m;
+    printf("Enter a simple expression: number operator number.\n");
+    scanf("%f" " %c" "%f", &a, &c, &b);
+    
+    switch (c)
+    {
+        case '+':	{
+		  			result = a + b;
+                    printf("The operator entered is +. The result of the addition is %.2f \n", result);
+                    break;
+                	}
+        case '-':   {
+					result = a - b;
+                    printf("The operator entered is -. The result of the subtraction is %.2f \n", result);
+                    break;
+                    }
+        case '*':   {
+					result = a * b;
+                    printf("The operator entered is *. The result of the multiplication is %.2f \n", result);
+                    break;
+                    }
+        case '/':   {
+					result = a / b;
+                    printf("The operator entered is /. The result of the division is %.2f \n", result);
+                    break;
+                    }
+        default:    {
+					printf("Enter the basic operator: +, -, * or /. \n");
+                    break;
+                    }
+    }
+                    
+    return 0;
+}	
+----------------------------------------------------------------------------------------------
+
+//Task 11
+
+#include<stdio.h>
+const int CALC_OF_TENS = 10;
+
+int main()
+{
+	 int grade, numbers;
+	
+	printf("Enter the number of points you obtained on the test. \n");
+	scanf("%d", &grade);
+
+	
+	if (grade <= 100 && grade >= 0)
+	{
+		numbers = grade / CALC_OF_TENS;
+	}
+	else if ( grade > 100 | grade < 0)
+	{
+		printf("The value entered is out of range: less than 0 or more than 100. \n");
+		return 1;
+	}
+	
+	
+	switch (numbers)
+	{
+		case 10: case 9:
+				{
+				printf("It is a grade A. \n");
+				break;
+				}
+		case 8:	{
+				printf("It is a grade B. \n");
+				break;
+				}
+		case 7:	{
+				printf("It is a grade C. \n");
+				break;
+				}
+		case 6:	{
+				printf("It is a grade D. \n");
+				break;
+				}
+		case 5:	{
+				printf("It is a grade E. \n");
+				break;
+				}
+		case 4: case 3: case 2: case 1:
+				{
+				printf("You scored less than 59 points, so it is worse than E. \n");
+				break;
+				}
+				
+		default:{	
+				printf("The value entered is out of range: less than 0 or more than 100. \n");
+				break;
+				}
+	}
+	
+	return 0;
+}
+----------------------------------------------------------------------------------------------
+
+//Task 12
+	
+#include<stdio.h>
+#include<ctype.h>
+ 
+int main()
+{
+    char character;
+    printf("Enter one character:\n");
+    scanf("%c", &character);
+    
+    if (isalpha(character))
+    {
+        printf("It is a letter.\n");
+        return 0;
+    }
+    else if (isdigit(character))
+    {
+        printf("It is a a number.\n");
+        return 0;
+    }
+    else
+    {
+        printf("It is a special character.\n");
+        return 0;
+    }
+    
+    return 0;
+}   
