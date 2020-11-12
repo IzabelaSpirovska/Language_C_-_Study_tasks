@@ -271,8 +271,8 @@ int main()
                 Beep(690, 200);
                 Sleep(200);
                 break;
-				}
-        case 4:  {
+		}
+        case 4: {
 		Beep(523,800);
                 Sleep(200);
                 Beep(523,800);
@@ -282,7 +282,7 @@ int main()
                 Beep(523,800);
                 Sleep(200);
                 break;
-				}		
+		}		
         case 3: {
 		Beep(523,500);
                 Sleep(200);
@@ -291,23 +291,23 @@ int main()
                 Beep(523,500);
                 Sleep(200);
                 break;
-				}
+		}
         case 2: {
 		Beep(440,400);
                 Sleep(200);
                 Beep(440,400);
                 Sleep(200);
                 break;
-				}
+		}
         case 1: {
 		Beep(700,200);
                 Sleep(200);
                 break;
-				}
+		}
         default:{
 		printf("The number entered is not within the range. \n");
                 break;
-				}
+		}
     }
     
     return 0;
