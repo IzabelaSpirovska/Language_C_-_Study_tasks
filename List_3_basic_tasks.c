@@ -55,3 +55,29 @@ int main()
 	
 	return 0;
 }
+----------------------------------------------------------------------------------------------
+
+//Task 3
+
+#include<stdio.h>
+const int DIVISOR_BY_10 = 10;
+
+int main()
+{
+	unsigned long long n;
+	int count = 1;
+	printf("Write a natural number: \n");
+	scanf("%llu", &n);
+	
+	do
+	{
+		n /= DIVISOR_BY_10;
+		count++;
+	}
+	while(n > 1);
+	{
+		printf("Total digits: %d \n", count);
+	}
+	
+	return 0;
+}
