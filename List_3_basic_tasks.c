@@ -375,4 +375,29 @@ int main()
 	
 	return 0;
 }
+----------------------------------------------------------------------------------------------
+//Task 5k
+//loop while	
+
+#include<stdio.h>
+#include<math.h>
+
+int main()
+{
+	unsigned int n, sum;
+	int count = 1;
 	
+	printf("Enter an natural number: \n");
+	scanf("%du", &n);
+	
+	
+	while(count <= n)
+	{
+		sum = sum + pow(count,2);
+		count++;
+	}
+	
+	printf("Sum of Natural Numbers = %d \n", sum);
+	
+	return 0;
+}
