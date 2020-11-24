@@ -81,3 +81,39 @@ int main()
 	
 	return 0;
 }
+----------------------------------------------------------------------------------------------
+
+//Task 4
+
+#include<stdio.h>
+const int DECIMAL_SYS = 10;
+const int BINARY_SYS = 2;
+
+int main()
+{
+	unsigned long long decimal_n, n, remainder;
+	int i = 1;
+	int binary = 0;
+	int count = 0;
+	printf("Enter a natural number: \n");
+	scanf("%llu", &n);
+	
+	decimal_n = n;
+	
+	while (n >= 1)
+	{
+		remainder = n % BINARY_SYS;
+		if(remainder == 1)
+		{
+			count++;
+		}
+		binary += remainder * i;
+		n /= BINARY_SYS;
+		i *= DECIMAL_SYS;
+	}
+	
+	printf("The entered decimal number is %llu and its binary representation is %d. \n", decimal_n, binary);
+	printf("There are %llu ones in the binary representation.", count);
+	return 0;
+}
+----------------------------------------------------------------------------------------------
