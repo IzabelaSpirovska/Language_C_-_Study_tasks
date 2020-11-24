@@ -245,3 +245,55 @@ int main()
 	
 	return 0;
 }
+----------------------------------------------------------------------------------------------
+//Task 5f
+//loop while
+	
+#include<stdio.h>
+const int N = 12;
+
+int main()
+{
+	int n, factorial;
+	int i = 1;
+	int count = 1;
+	
+	printf("12 consecutive factorial natural numbers are: \n");
+	
+	i = 1;
+	
+	while(count <= N)
+	{
+		factorial = count * i;
+		i = factorial;
+		printf("%d! = %d \n", count, factorial);
+    	count +=1;
+
+	}
+	
+	
+	return 0;
+}
+#include<stdio.h>
+
+int main()
+{
+	unsigned int n;
+	int i = 1;
+	int count = 1;
+	
+	printf("Enter an natural number: \n");
+	scanf("%du", &n);
+	printf("List of consecutive words of the sequence an = 1/n from 1 to n are: \n");
+	
+	
+	while(count <= n)
+	{
+		printf("1/%d \t", count);
+		count++;
+
+	}
+	
+	
+	return 0;
+}
