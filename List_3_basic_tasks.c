@@ -239,7 +239,7 @@ int main()
 	while(count <= n)
 	{
 		printf("%d \n", i);
-		i+= 3;
+		i += 3;
 		count++;
 	}
 	
@@ -267,7 +267,7 @@ int main()
 		factorial = count * i;
 		i = factorial;
 		printf("%d! = %d \n", count, factorial);
-    	count +=1;
+    	count += 1;
 
 	}
 	
