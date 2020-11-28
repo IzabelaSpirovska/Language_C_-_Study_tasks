@@ -13,17 +13,14 @@ int main()
 	if (a >= b && a >= c)
 	{
 		printf("%d is the largest number. \n", a);
-		return 0;
 	}	
 	else if (b >= a && b >= c)
 	{
 		printf("%d is the largest number. \n", b);
-		return 0;
 	}	
 	else
 	{
 		printf("%d is the largest number. \n", c);
-		return 0;
 	} 
 	
 	return 0;
@@ -69,18 +66,15 @@ int main()
 	{
 		sum = a + b;
 		printf("The sum of two negative numbers = %d \n", sum);
-		return 0;
 	}
 	else if (a > 0 && b > 0)
 	{
 		sum = a + b;
 		printf("The sum of two positive numbers = %d \n", sum);
-		return 0;
 	}
 	else 
 	{
 		printf("Enter two numbers with the same characters. \n");
-		return 1;
 	}
 	
 	return 0;
@@ -102,17 +96,14 @@ int main()
 	if (a > b)
 	{
 		printf("Number a = %f is greater than number b = %f.\n", a, b);
-		return 0;
 	}
 	else if (a <b)
 	{
 		printf("Number b = %f is greater than number a = %f.\n", b, a);
-		return 0;
 	}
 	else
 	{
 		printf("The numbers a = %f and b = %f are equal.\n", a, b);
-		return 0;
 	}
 	
 	return 0;
