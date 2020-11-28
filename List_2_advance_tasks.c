@@ -1,7 +1,7 @@
 // Task 1+
 
 #include<stdio.h>
-
+#include<math.h>
 
 int main()
 {
@@ -14,20 +14,22 @@ int main()
     if (number > 0)
     {
     	lenght = log10(number) + 1;
+	    
     	if (lenght > 4)
     	{
-			printf("The number entered has more digits than four. \n");
-			return 1;
+		printf("The number entered has more digits than four. \n");
+		return 1;
 		
-		}
-    	printf("Total digits: %d. \n", lenght);
 	}
+    	printf("Total digits: %d. \n", lenght);
+    }
 	else if (number < 0)
 	{
 		number = number * (-1);
 		lenght = log10(number) + 1;
+		
 		if (lenght > 4)
-    	{
+    		{
 			printf("The number entered has more digits than four. \n");
 			return 1;
 		}
@@ -36,7 +38,6 @@ int main()
 	else if (number == 0)
 	{
 		printf("Total digits: 1. \n");
-		return 0;
 	}	
 	
 	return 0;
