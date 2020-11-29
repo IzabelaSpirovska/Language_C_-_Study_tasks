@@ -139,6 +139,29 @@ int main()
 	
 	return 0;
 }
+
+//loop for
+
+#include<stdio.h>
+
+int main()
+{
+	unsigned int n;
+	int i;
+	
+	printf("Enter an natural number: \n");
+	scanf("%du", &n);
+	printf("List of consecutive natural numbers from 1 to n are: \n");
+	
+	
+	for(i = 1; i <= n; i++)
+	{
+		printf("%d \n", i);
+
+	}
+	
+	return 0;
+}
 ----------------------------------------------------------------------------------------------
 //Task 5b
 //loop while
@@ -164,6 +187,28 @@ int main()
 	
 	return 0;
 }
+
+//loop for
+
+#include<stdio.h>
+
+int main()
+{
+	unsigned int n;
+	int i;
+	
+	printf("Enter an natural number: \n");
+	scanf("%du", &n);
+	printf("List of consecutive natural numbers from n to 1 are: \n");
+	
+	
+	for(i = n; i >= 1; i--)
+	{
+		printf("%d \n", i);
+	}
+	
+	return 0;
+}
 ----------------------------------------------------------------------------------------------
 //Task 5c
 //loop while
@@ -184,6 +229,28 @@ int main()
 	{
 		printf("%d \n", i);
 		i += 2;
+	}
+	
+	return 0;
+}
+
+//loop for
+
+#include<stdio.h>
+
+int main()
+{
+	unsigned int n;
+	int i;
+	
+	printf("Enter an natural number: \n");
+	scanf("%du", &n);
+	printf("List of consecutive natural numbers even and smaller than n are: \n");
+	
+	
+	for(i = 2; i < n; i += 2)
+	{
+		printf("%d \n", i);
 	}
 	
 	return 0;
@@ -220,6 +287,36 @@ int main()
 	
 	return 0;
 }
+
+//loop for
+
+#include<stdio.h>
+
+int main()
+{
+	unsigned int n;
+	int i;
+	
+	printf("Enter an natural number: \n");
+	scanf("%du", &n);
+	printf("List of consecutive natural numbers odd starting with n are: \n");
+	
+	if( n % 2 == 0)
+	{
+		i = n - 1;
+	}
+	else
+	{
+		i = n;
+	}
+	
+	for(i = n; i >= 1; i -= 2)
+	{
+		printf("%d \n", i);
+	}
+	
+	return 0;
+}
 ----------------------------------------------------------------------------------------------
 //Task 5e
 //loop while
@@ -241,6 +338,29 @@ int main()
 		printf("%d \n", i);
 		i += 3;
 		count++;
+	}
+	
+	return 0;
+}
+
+//loop for
+
+#include<stdio.h>
+
+int main()
+{
+	unsigned long n;
+	int i;
+	int count = 1;
+	
+	printf("Enter the last natural number of the arithmetic sequence: \n");
+	scanf("%lu", &n);
+	printf("List of consecutive word of the arithmetic progression from 1 to %d are: \n", n);
+	
+	for(i = 1; count <= n; count++)
+	{
+		printf("%d. %d \n", count, i);
+		i+= 3;
 	}
 	
 	return 0;
@@ -269,6 +389,30 @@ int main()
 		printf("%d! = %d \n", count, factorial);
     	count += 1;
 
+	}
+	
+	return 0;
+}
+
+//loop for
+
+#include<stdio.h>
+const int N = 12;
+
+int main()
+{
+	int n, factorial;
+	int i;
+	int count = 1;
+	
+	printf("12 consecutive factorial natural numbers are: \n");
+	
+	
+	for(i = 1; count <= N; count += 1)
+	{
+		factorial = count * i;
+		i = factorial;
+		printf("%d! = %d \n", count, factorial);
 	}
 	
 	return 0;
