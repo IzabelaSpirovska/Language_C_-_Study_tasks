@@ -587,7 +587,7 @@ int main()
 		count++;
 	}
 	
-	printf("Sum of Natural Numbers = %d \n", sum);
+	printf("Sum of natural numbers = %d \n", sum);
 	
 	return 0;
 }
@@ -611,7 +611,7 @@ int main()
 		sum += count;
 	}
 	
-	printf("Sum of Natural Numbers = %d \n", sum);
+	printf("Sum of natural numbers = %d \n", sum);
 	
 	return 0;
 }
