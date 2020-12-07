@@ -840,3 +840,35 @@ int main()
 		
 	return 0;
 }
+----------------------------------------------------------------------------------------------
+//Task 7
+
+#include<stdio.h>
+
+int main()
+{
+	int m, n, remainder, nwd;
+	
+	printf("Enter two positive integers : \n");
+	scanf("%d" "%d", &m, &n);
+	
+
+	if(n == 0)
+	{
+		nwd = m;
+		printf("The greatest common divisor is: %d \n", m);
+		//return 0;
+	}
+
+	
+	while(n != 0)
+	{
+		remainder = m % n;
+		m = n;
+		n = remainder;
+		nwd = m;
+	}
+	printf("The greatest common divisor is: %d \n", nwd);
+	
+	return 0;
+}
