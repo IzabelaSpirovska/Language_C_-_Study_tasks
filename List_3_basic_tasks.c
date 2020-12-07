@@ -996,3 +996,28 @@ int main()
 
 	return 0;
 }
+----------------------------------------------------------------------------------------------
+//Task 11a
+	
+#include<stdio.h>
+
+int main()
+{
+	int i, j, n;
+	
+	printf("Enter a natural number: \n");
+	scanf("%d", &n);
+	printf("\n");
+	
+	for(i = 1; i <= n; i++)
+	{
+		for(j = 1; j <= i; j++)
+			printf("*");
+			
+		printf("\n");
+
+	}
+	
+	
+	return 0;
+}
