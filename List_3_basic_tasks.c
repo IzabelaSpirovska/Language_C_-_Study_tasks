@@ -872,3 +872,33 @@ int main()
 	
 	return 0;
 }
+----------------------------------------------------------------------------------------------
+//Task 8
+	
+#include<stdio.h>
+const int INITIAL_AMOUNT = 1000;
+const float FIRST_INTEREST = 0.1;
+const float SECOND_INTEREST = 0.06;
+
+int main()
+{
+	float money_a, money_f;
+	int count = 0;
+	
+	money_a = INITIAL_AMOUNT;
+	money_f = INITIAL_AMOUNT;
+	
+	do
+	{
+		money_a += INITIAL_AMOUNT * FIRST_INTEREST;
+		money_f += money_f * SECOND_INTEREST;
+		count++;
+	}
+	while(money_a > money_f);
+	{
+		printf("Franek will have more money than Agata after %d years. \n", count);
+		printf("After %d years Franek will have %.2f zl and Agata %.2f zl. \n", count, money_f, money_a);
+	}
+	
+	return 0;
+}
